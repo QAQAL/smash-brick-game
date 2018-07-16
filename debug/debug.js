@@ -18,5 +18,6 @@ var enableDebugMode = function(game, enable) {
         var input = event.target
         // log(event, input.value)
         window.fps = Number(input.value)
+        input.title = window.fps
     })
 }

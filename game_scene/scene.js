@@ -22,7 +22,7 @@ var Scene = function(game) {
 
     s.draw = function() {
         // draw 背景
-        game.context.fillStyle = "#554"
+        game.context.fillStyle = "#473C8B"
         game.context.fillRect(0, 0, 400, 300)
         // draw
         game.drawImage(paddle)
@@ -51,7 +51,6 @@ var Scene = function(game) {
         }
         // 判断相撞
         if (paddle.collide(ball)) {
-            // 这里应该调用一个 ball.反弹() 来实现
             ball.反弹()
         }
         // 判断 ball 和 blocks 相撞
